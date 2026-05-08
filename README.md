@@ -41,7 +41,7 @@ After completing the installation and configuration process, the DVWA login page
 ![DVWA Localhost](DVWAlocalhost.png)
 
 
-# TASK 1
+# TASK 1 - Reconnaissance
 Reconnaissance is the first phase in penetration testing where information is collected about the target system before conducting further security assessments. In this task, several Kali Linux reconnaissance tools were used to gather information from a locally hosted DVWA environment.
 
 Target used in this assessment:
@@ -202,14 +202,131 @@ workspaces create dvwa
 Recon-ng successfully provided a structured framework for managing reconnaissance activities and organizing information gathering tasks. The framework is useful during penetration testing because it helps automate reconnaissance processes and improve workflow management.
 
 
-# TASK 2
-Maintaining access, this phase requires the pen tester to continue dominating the
-target system as long as possible and cause more destruction. It requires tools that can
-allow stealthy behavior and under-the-ground operations.
+---
+# Task 2 — Maintaining Access
+Maintaining access is a phase in penetration testing where a tester learns how access to a system can still be available after entering the target system. In this task, several tools in Kali Linux were explored to understand how they work in a controlled lab environment.
+
+For this activity, DVWA (Damn Vulnerable Web Application) was used as the practice target because it is designed for cybersecurity learning and testing.
 
 ## DVWA Lab Environment Setup
 
 ![DVWA Login](images/dvwa-login.png)
 
-Description:
-The Damn Vulnerable Web Application (DVWA) was successfully deployed on Kali Linux using a localhost environment. DVWA was used as the authorized testing platform for cybersecurity laboratory activities and penetration testing simulations.
+## Disclaimer
+This project is for educational purposes only. All testing was done in a safe lab environment using Kali Linux and DVWA on localhost. No real websites, servers, or public systems were involved in this activity. The Damn Vulnerable Web Application (DVWA) was successfully deployed on Kali Linux using a localhost environment. DVWA was used as the authorized testing platform for cybersecurity laboratory activities and penetration testing simulations.
+
+
+---
+
+# Tool 1 — Webshells
+
+Webshells are files that can be uploaded to a vulnerable website to allow remote access through a web browser. Kali Linux already provides several example webshell files for learning purposes.
+
+---
+
+## Accessing the Webshell Folder
+
+This step was done to check the available webshell categories provided in Kali Linux.
+
+```bash
+cd /usr/share/webshells
+ls
+```
+
+![Webshells Folder](webshells-1folder.png)
+
+### Description
+The command was used to open the webshell directory in Kali Linux and list the available folders. Different folders are provided for different web programming languages such as PHP, ASP, JSP, and Perl.
+
+---
+
+## Viewing PHP Webshell Files
+
+This step focused on PHP webshell examples because DVWA uses PHP.
+
+```bash
+cd php
+ls
+```
+
+![PHP Webshells](webshells-2phpfolder.png)
+
+### Description
+The command was used to enter the PHP folder and display the available PHP webshell files. These files are commonly used in web security testing and learning activities inside a safe lab environment.
+
+---
+
+# Tool 2 — Weevely
+
+Weevely is a tool used to create a PHP shell file. It helps testers understand how remote access through a website may happen during penetration testing practice.
+
+---
+
+## Checking Weevely Tool
+
+This step was done to check whether Weevely was already installed and working in Kali Linux.
+
+```bash
+weevely
+```
+
+![Weevely Information](weevely-1.png)
+
+### Description
+The command was used to display the Weevely information and available options. It also shows how the tool is used for creating and managing PHP shell files.
+
+---
+
+## Creating a PHP Payload
+
+This step created a sample PHP file named `test.php` for learning purposes.
+
+```bash
+weevely generate password test.php
+```
+
+![Weevely Payload](weevely-2.png)
+
+### Description
+The command was used to generate a sample PHP payload file called `test.php`. This file can later be used in a controlled DVWA upload activity to understand how maintaining access works in web applications.
+
+---
+
+# Tool 3 — Cryptcat
+
+Cryptcat is a networking tool that allows communication between systems. It is similar to Netcat but supports encrypted communication.
+
+---
+
+## Installing and Viewing Cryptcat Options
+
+This step was done to install Cryptcat and view the available commands and options.
+
+```bash
+sudo apt install cryptcat -y
+cryptcat -h
+```
+
+![Cryptcat](cryptcat-1.png)
+
+### Description
+The command was used to install Cryptcat and display its help menu. This helps users understand the available networking and communication features provided by the tool.
+
+---
+
+# Comparison of Tools
+
+| Tool | Main Use | Function in Lab |
+|------|------|------|
+| Webshells | Collection of shell files | Learning about web-based access |
+| Weevely | PHP shell generator | Creating PHP payload files |
+| Cryptcat | Communication tool | Understanding encrypted connections |
+
+---
+
+# Conclusion
+
+In this task, several maintaining access tools available in Kali Linux were explored inside a controlled DVWA lab environment. The activity helped improve understanding of how webshells, payload generation, and communication tools are used during cybersecurity testing.
+
+Webshells help testers understand web-based access methods, Weevely helps create PHP shell files for learning purposes, and Cryptcat helps demonstrate communication between systems. Overall, this task provided practical exposure to maintaining access concepts in penetration testing while following safe and ethical cybersecurity practices.
+
