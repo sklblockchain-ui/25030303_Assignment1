@@ -200,3 +200,16 @@ workspaces create dvwa
 
 ### Conclusion
 Recon-ng successfully provided a structured framework for managing reconnaissance activities and organizing information gathering tasks. The framework is useful during penetration testing because it helps automate reconnaissance processes and improve workflow management.
+
+
+# TASK 2
+Maintaining access, this phase requires the pen tester to continue dominating the
+target system as long as possible and cause more destruction. It requires tools that can
+allow stealthy behavior and under-the-ground operations.
+
+## DVWA Lab Environment Setup
+
+![DVWA Login](images/dvwa-login.png)
+
+Description:
+The Damn Vulnerable Web Application (DVWA) was successfully deployed on Kali Linux using a localhost environment. DVWA was used as the authorized testing platform for cybersecurity laboratory activities and penetration testing simulations.
