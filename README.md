@@ -159,3 +159,44 @@ dnsrecon -d localhost -t std
 
 ### Conclusion
 DNSRecon successfully performed DNS reconnaissance activities against the localhost target. The tool is useful during penetration testing because it helps collect DNS information and improves understanding of the target environment before conducting further assessments.
+
+---
+## Tool 4 — Recon-ng
+
+Recon-ng is a web reconnaissance framework used during penetration testing to automate information gathering and reconnaissance activities. The framework helps penetration testers organize reconnaissance tasks, manage workspaces, and use different modules for collecting target information efficiently.
+
+### Installing Recon-ng
+This step installs the Recon-ng framework in Kali Linux before starting reconnaissance and information gathering activities.
+
+![Recon-ng Installation](reconng-1install.png)
+
+### Starting Recon-ng Framework
+This step is conducted to launch the Recon-ng framework environment before using its reconnaissance modules and workspace management features.
+
+```bash
+recon-ng
+```
+
+![Recon-ng Framework](reconng-2.png)
+
+### Marketplace Search
+This command is used to search available reconnaissance modules inside the Recon-ng framework. The purpose of this step is to identify useful modules that can be used for information gathering and reconnaissance activities.
+
+```bash
+marketplace search
+```
+
+![Recon-ng Marketplace Search](reconng-3marketplacesearch.png)
+
+### Workspace Management
+This command is used to display existing workspaces and create a dedicated workspace for the target assessment. Workspaces help organize reconnaissance activities and separate project data properly.
+
+```bash
+workspaces list
+workspaces create dvwa
+```
+
+![Recon-ng Workspaces](reconng-4workspaces.png)
+
+### Conclusion
+Recon-ng successfully provided a structured framework for managing reconnaissance activities and organizing information gathering tasks. The framework is useful during penetration testing because it helps automate reconnaissance processes and improve workflow management.
