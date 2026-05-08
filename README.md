@@ -393,20 +393,26 @@ The command failed because `Import-Module` is a PowerShell command and is not su
 
 ---
 
-# Comparison of Tools
+## Comparison of Tools
 
 | Tool | Main Use | Function in Lab |
 |------|------|------|
 | Webshells | Collection of shell files | Learning about web-based access |
 | Weevely | PHP shell generator | Creating PHP payload files |
 | Cryptcat | Communication tool | Understanding encrypted connections |
+| Dns2tcp | DNS tunneling tool | Bypassing firewall using DNS traffic |
+| PowerSploit | Windows exploitation tool | Not supported in Kali Linux (PowerShell required) |
 
 ---
 
-# Conclusion
-In this task, some maintaining access tools in Kali Linux were tested using DVWA lab. Everything was done in localhost only, so it is safe. From this activity, can understand better how attacker can keep access inside a system using simple methods. 
-Webshell is used to show how attacker can access system through website. Weevely is used to create PHP file (payload) that can be uploaded into the system. Cryptcat is used to show how communication between systems can happen.
-Overall, this task helps to understand basic concept of maintaining access in penetration testing. It also shows why security is important, because if system is weak, attacker can easily upload file and keep access inside the system.
+## Conclusion
+
+In this task, several maintaining access tools in Kali Linux were tested using the DVWA lab. Everything was done in localhost only, so it is safe.From this activity, it helps to better understand how attackers can maintain access inside a system using simple methods.
+
+Webshell is used to show how an attacker can access a system through a website. Weevely is used to create a PHP file (payload) that can be uploaded into the system. Cryptcat is used to demonstrate how communication between systems can happen securely. In addition, Dns2tcp is used to show how attackers can bypass firewall restrictions by using DNS traffic for communication. PowerSploit was also tested, but it is not supported in Kali Linux because it requires a Windows PowerShell environment.
+
+Overall, this task helps to understand the basic concept of maintaining access in penetration testing. It also shows why security is important, because if a system is weak, an attacker can easily upload files and maintain access inside the system.
+
 
 ---
 ## DVWA Practical — Maintaining Access (File Upload Attack)
