@@ -229,7 +229,7 @@ For this activity, DVWA (Damn Vulnerable Web Application) was used as the practi
 
 ### DVWA Lab Environment Setup
 
-![DVWA Login](images/DVWAlocalhost.png)
+![DVWA Login](DVWAlocalhost.png)
 
 ## Disclaimer
 This project is for educational purposes only. All testing was done in a safe lab environment using Kali Linux and DVWA on localhost. No real websites, servers, or public systems were involved in this activity. The Damn Vulnerable Web Application (DVWA) was successfully deployed on Kali Linux using a localhost environment. DVWA was used as the authorized testing platform for cybersecurity laboratory activities and penetration testing simulations.
