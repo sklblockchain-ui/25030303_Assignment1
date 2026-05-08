@@ -208,9 +208,9 @@ Maintaining access is a phase in penetration testing where a tester learns how a
 
 For this activity, DVWA (Damn Vulnerable Web Application) was used as the practice target because it is designed for cybersecurity learning and testing.
 
-## DVWA Lab Environment Setup
+### DVWA Lab Environment Setup
 
-![DVWA Login](images/dvwa-login.png)
+![DVWA Login](images/DVWAlocalhost.png)
 
 ## Disclaimer
 This project is for educational purposes only. All testing was done in a safe lab environment using Kali Linux and DVWA on localhost. No real websites, servers, or public systems were involved in this activity. The Damn Vulnerable Web Application (DVWA) was successfully deployed on Kali Linux using a localhost environment. DVWA was used as the authorized testing platform for cybersecurity laboratory activities and penetration testing simulations.
@@ -218,13 +218,11 @@ This project is for educational purposes only. All testing was done in a safe la
 
 ---
 
-# Tool 1 — Webshells
+## Tool 1 — Webshells
 
 Webshells are files that can be uploaded to a vulnerable website to allow remote access through a web browser. Kali Linux already provides several example webshell files for learning purposes.
 
----
-
-## Accessing the Webshell Folder
+### Accessing the Webshell Folder
 
 This step was done to check the available webshell categories provided in Kali Linux.
 
@@ -232,15 +230,12 @@ This step was done to check the available webshell categories provided in Kali L
 cd /usr/share/webshells
 ls
 ```
-
 ![Webshells Folder](webshells-1folder.png)
 
 ### Description
 The command was used to open the webshell directory in Kali Linux and list the available folders. Different folders are provided for different web programming languages such as PHP, ASP, JSP, and Perl.
 
----
-
-## Viewing PHP Webshell Files
+### Viewing PHP Webshell Files
 
 This step focused on PHP webshell examples because DVWA uses PHP.
 
@@ -255,14 +250,12 @@ ls
 The command was used to enter the PHP folder and display the available PHP webshell files. These files are commonly used in web security testing and learning activities inside a safe lab environment.
 
 ---
-
-# Tool 2 — Weevely
+## Tool 2 — Weevely
 
 Weevely is a tool used to create a PHP shell file. It helps testers understand how remote access through a website may happen during penetration testing practice.
 
----
 
-## Checking Weevely Tool
+### Checking Weevely Tool
 
 This step was done to check whether Weevely was already installed and working in Kali Linux.
 
@@ -275,9 +268,8 @@ weevely
 ### Description
 The command was used to display the Weevely information and available options. It also shows how the tool is used for creating and managing PHP shell files.
 
----
 
-## Creating a PHP Payload
+### Creating a PHP Payload
 
 This step created a sample PHP file named `test.php` for learning purposes.
 
@@ -291,14 +283,11 @@ weevely generate password test.php
 The command was used to generate a sample PHP payload file called `test.php`. This file can later be used in a controlled DVWA upload activity to understand how maintaining access works in web applications.
 
 ---
-
-# Tool 3 — Cryptcat
+## Tool 3 — Cryptcat
 
 Cryptcat is a networking tool that allows communication between systems. It is similar to Netcat but supports encrypted communication.
 
----
-
-## Installing and Viewing Cryptcat Options
+### Installing and Viewing Cryptcat Options
 
 This step was done to install Cryptcat and view the available commands and options.
 
@@ -330,14 +319,13 @@ Webshell is used to show how attacker can access system through website. Weevely
 Overall, this task helps to understand basic concept of maintaining access in penetration testing. It also shows why security is important, because if system is weak, attacker can easily upload file and keep access inside the system.
 
 ---
-# DVWA Practical — Maintaining Access (File Upload Attack)
+## DVWA Practical — Maintaining Access (File Upload Attack)
 
 ## Disclaimer
 This project is for educational purposes only. All testing was done in a controlled lab environment using Kali Linux and DVWA on localhost. No real system or external server was involved.
 
----
 
-# Introduction
+## Introduction
 
 In this part, DVWA (Damn Vulnerable Web Application) was used as a testing platform to simulate a simple attack. The goal is to understand how attacker can upload file into system and maintain access.
 
@@ -345,7 +333,7 @@ This is done in safe lab only (localhost), just for learning purpose.
 
 ---
 
-# Step 1 — Reset Database
+## Step 1 — Reset Database
 
 First, DVWA database was created/reset to make sure the system is working properly.
 
@@ -356,7 +344,7 @@ This step is to prepare DVWA so everything is clean and ready. If database not r
 
 ---
 
-# Step 2 — Login to DVWA
+## Step 2 — Login to DVWA
 
 Login using default account.
 
@@ -367,7 +355,7 @@ Login is needed to access all DVWA features. Without login, cannot test anything
 
 ---
 
-# Step 3 — DVWA Dashboard
+## Step 3 — DVWA Dashboard
 
 After login, dashboard is displayed.
 
@@ -378,7 +366,7 @@ This shows DVWA is successfully running. All vulnerability modules are available
 
 ---
 
-# Step 4 — Set Security Level to Low
+## Step 4 — Set Security Level to Low
 
 Security level was changed to LOW.
 
@@ -389,7 +377,7 @@ Set to LOW so it is easier to test. If security is high, attack will not work. T
 
 ---
 
-# Step 5 — Access File Upload Module
+## Step 5 — Access File Upload Module
 
 File Upload module is used to test vulnerability.
 
@@ -400,7 +388,7 @@ This module allows user to upload file. If not secure, attacker can upload dange
 
 ---
 
-# Step 6 — Upload test.php (Attack Simulation)
+## Step 6 — Upload test.php (Attack Simulation)
 
 A PHP file (test.php) was uploaded into the system.
 
@@ -420,7 +408,7 @@ This is called **file upload vulnerability**.
 
 ---
 
-# Step 7 — Access Uploaded File
+## Step 7 — Access Uploaded File
 
 The uploaded file was opened using browser:
 
@@ -434,24 +422,21 @@ This is normal because:
 - it works in background (webshell)
 
 Important point:
-- file is accepted ✔
-- file is running ✔
-- access is still there ✔
+- file is accepted 
+- file is running 
+- access is still there
 
 This shows attacker can maintain access to system.
 
 ---
 
-# Conclusion
+### Conclusion
 
 In this activity, a simple file upload attack was successfully simulated using DVWA.
-
 The system allowed a PHP file to be uploaded and executed, which shows a serious security weakness.
-
 From this task, it can be understood that:
 - weak file validation can be dangerous
 - attacker can upload malicious file
 - attacker can maintain access through uploaded file
-
 This lab helps to understand basic concept of maintaining access in penetration testing using a safe and controlled environment.
 
