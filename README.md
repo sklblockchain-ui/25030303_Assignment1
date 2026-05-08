@@ -42,3 +42,44 @@ Reconnaissance is the first phase in penetration testing where information is co
 Target used in this assessment:
 
 http://localhost/DVWA/login.php
+
+---
+
+## Tool 1 — Nmap
+
+Nmap is a network scanning tool used during the reconnaissance phase in penetration testing. It helps identify open ports, running services, and operating system information on the target machine. In this task, Nmap was used to scan the locally hosted DVWA web application running on localhost.
+
+### Installing Nmap
+This step installs the Nmap tool in Kali Linux before starting the reconnaissance and scanning activities. The tool is required to perform network discovery and gather target information during penetration testing.
+
+![Nmap Installation](nmap-1Install.png)
+
+### Service Version Detection
+This test is conducted to identify the versions of services running on the target machine such as Apache or HTTP services. Identifying service versions helps penetration testers understand what applications are running and whether they may contain vulnerabilities.
+
+```bash
+nmap -sV localhost
+```
+
+![Nmap Version Detection](nmap-2VersionDetection.png)
+
+### Operating System Detection
+This test is conducted to identify the operating system used by the target machine. Knowing the operating system helps penetration testers plan suitable testing methods and understand the target environment better.
+
+```bash
+sudo nmap -O localhost
+```
+
+![Nmap OS Detection](nmap-3OSDetection.png)
+
+### Aggressive Scan
+This test is conducted to perform more advanced reconnaissance activities including operating system detection, service version detection, script scanning, and traceroute. It helps gather more detailed information about the target before moving to the next penetration testing phase.
+
+```bash
+sudo nmap -A localhost
+```
+
+![Nmap Aggressive Scan](nmap-4AggresiveScan.png)
+
+### Conclusion
+Nmap successfully gathered useful information about the localhost target environment. The tool is important during the reconnaissance phase because it helps penetration testers understand the target system before conducting further security assessments.
