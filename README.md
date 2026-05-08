@@ -35,6 +35,11 @@ The target IP address and localhost environment were verified before starting re
 
 ![Target IP](iptarget.png)
 
+### DVWA Localhost Access
+After completing the installation and configuration process, the DVWA login page was successfully accessed through the localhost environment using a web browser. This confirms that the Apache web server, PHP, and database services are functioning correctly and the DVWA application is ready for penetration testing activities.
+
+![DVWA Localhost](DVWAlocalhost.png)
+
 
 # TASK 1
 Reconnaissance is the first phase in penetration testing where information is collected about the target system before conducting further security assessments. In this task, several Kali Linux reconnaissance tools were used to gather information from a locally hosted DVWA environment.
