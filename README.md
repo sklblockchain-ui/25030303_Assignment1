@@ -320,6 +320,77 @@ cryptcat -h
 ### Description
 The command was used to install Cryptcat and display its help menu. This helps users understand the available networking and communication features provided by the tool.
 
+## Tool 4 — Dns2tcp
+
+Dns2tcp is a tunneling tool used to transfer TCP traffic through DNS protocol. It helps attackers maintain communication with a compromised system by bypassing firewall restrictions using DNS traffic.
+
+### Installing Dns2tcp
+
+This step was done to install the dns2tcp tool in Kali Linux.
+
+```bash
+sudo apt update
+sudo apt install dns2tcp -y
+```
+
+![Dns2tcp Installation](dns-install.png)
+
+### Description
+The command was used to install dns2tcp in Kali Linux. This ensures that both client (`dns2tcpc`) and server (`dns2tcpd`) components are available for use in DNS tunneling activities.
+
+---
+
+### Checking Dns2tcp Client
+
+This step was done to check the dns2tcp client tool and view available options.
+
+```bash
+dns2tcpc
+```
+
+![Dns2tcp Client](dns-dns2tcpc.png)
+
+### Description
+The command was used to display the usage and options of the dns2tcp client. It confirms that the tool is installed and ready to be used for DNS communication testing.
+
+---
+
+### Checking Dns2tcp Server
+
+This step was done to view the server configuration options.
+
+```bash
+dns2tcpd -h
+```
+
+![Dns2tcp Server](dns-dns2tcpd.png)
+
+### Description
+The command was used to display help information for the dns2tcp server. It shows how DNS tunneling communication can be configured between systems.
+
+---
+
+### Testing DNS Tunneling Request
+
+This step was done to simulate a DNS tunneling request.
+
+```bash
+dns2tcpc -z google.com -r ssh
+```
+
+![Dns2tcp Test](dns-dns2tcpc-z.png)
+
+### Description
+The command was used to simulate a DNS tunneling request using SSH over DNS. Although full tunneling requires proper configuration, this step demonstrates how DNS-based communication works in maintaining access.
+
+## Tool 5 — PowerSploit
+
+![PowerSploit_Test](powersploit.png)
+
+### Description
+
+The command failed because `Import-Module` is a PowerShell command and is not supported in Kali Linux bash terminal. PowerSploit is a Windows-based tool, so it cannot run in Linux or macOS environment without PowerShell.
+
 ---
 
 # Comparison of Tools
