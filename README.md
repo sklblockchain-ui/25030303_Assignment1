@@ -6,8 +6,7 @@
 ## Disclaimer
 This project is conducted strictly for educational purposes only in a controlled lab environment using authorized targets.
 
-## Setting up before starting lab
-
+### Setting up before starting lab
 Before starting the penetration testing tasks, the DVWA (Damn Vulnerable Web Application) environment was prepared and configured in a local lab setup. This preparation ensures that all required services, applications, and configurations are functioning correctly before conducting reconnaissance and security testing activities. The setup process also provides a safe and controlled environment for learning ethical hacking and penetration testing techniques.
 
 ### Installing DVWA
