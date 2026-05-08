@@ -6,10 +6,15 @@
 ## Disclaimer
 This project is conducted strictly for educational purposes only in a controlled lab environment using authorized targets.
 
-# Setting up before starting lab
+## Setting up before starting lab
+1. ![Installing DVWA](install dwva.png)
+2. [Cloning DVWA](cloning DVWA.png)
+3. [Config DVWA](config DVWA.png)
+4. [Apache Status](apache status.png)
+5. [Target IP](ip target.png)
 
 
-#TASK 1
+# TASK 1
 Reconnaissance is the first phase in penetration testing where information is collected about the target system before conducting further security assessments. In this task, several Kali Linux reconnaissance tools were used to gather information from a locally hosted DVWA environment.
 
 Target used in this assessment:
