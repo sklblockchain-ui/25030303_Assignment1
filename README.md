@@ -330,8 +330,6 @@ In this part, DVWA (Damn Vulnerable Web Application) was used as a testing platf
 
 This is done in safe lab only (localhost), just for learning purpose.
 
----
-
 ## Step 1 — Reset Database
 
 First, DVWA database was created/reset to make sure the system is working properly.
@@ -340,8 +338,6 @@ First, DVWA database was created/reset to make sure the system is working proper
 
 ### Explanation
 This step is to prepare DVWA so everything is clean and ready. If database not ready, system cannot run properly.
-
----
 
 ## Step 2 — Login to DVWA
 
@@ -352,8 +348,6 @@ Login using default account.
 ### Explanation
 Login is needed to access all DVWA features. Without login, cannot test anything.
 
----
-
 ## Step 3 — DVWA Dashboard
 
 After login, dashboard is displayed.
@@ -362,8 +356,6 @@ After login, dashboard is displayed.
 
 ### Explanation
 This shows DVWA is successfully running. All vulnerability modules are available on the left menu.
-
----
 
 ## Step 4 — Set Security Level to Low
 
@@ -374,8 +366,6 @@ Security level was changed to LOW.
 ### Explanation
 Set to LOW so it is easier to test. If security is high, attack will not work. This is for learning purpose only.
 
----
-
 ## Step 5 — Access File Upload Module
 
 File Upload module is used to test vulnerability.
@@ -384,8 +374,6 @@ File Upload module is used to test vulnerability.
 
 ### Explanation
 This module allows user to upload file. If not secure, attacker can upload dangerous file like PHP.
-
----
 
 ## Step 6 — Upload test.php (Attack Simulation)
 
@@ -404,8 +392,6 @@ Meaning:
 - can be accessed later
 
 This is called **file upload vulnerability**.
-
----
 
 ## Step 7 — Access Uploaded File
 
@@ -438,4 +424,37 @@ From this task, it can be understood that:
 - attacker can upload malicious file
 - attacker can maintain access through uploaded file
 This lab helps to understand basic concept of maintaining access in penetration testing using a safe and controlled environment.
+
+---
+## References
+
+1. OWASP. (n.d.). Unrestricted File Upload.  
+   https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload  
+
+2. Kali Linux Tools Documentation.  
+   https://www.kali.org/tools/  
+
+3. DVWA Official GitHub Repository.  
+   https://github.com/digininja/DVWA  
+
+4. Weevely Documentation.  
+   https://github.com/epinna/weevely3  
+
+5. Cryptcat Tool Information.  
+   https://tools.kali.org/network-analysis/cryptcat  
+
+6. How Hackers Chat in Terminal (SECURELY!) | Cryptcat – Kali Linux  
+   https://youtu.be/nd54NLbmbP0  
+
+7. Web Hacking for Beginners #19 – How To Use Weevely PHP Backdoor  
+   https://youtu.be/Y1gY5En6MsM  
+
+8. How Hackers Bypass Website File Upload Filters (Upload WebShell Backdoor)  
+   https://youtu.be/zZc6L5II90c  
+
+9. Hackers Love This Trick: Web Shell Upload Demo & Explained  
+   https://youtu.be/hQ_0XBClqI0  
+
+10. Generating a PHP Backdoor with Weevely – Post Exploitation  
+    https://youtu.be/bnIrhbNpX-I  
 
