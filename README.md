@@ -88,3 +88,43 @@ sudo nmap -A localhost
 
 ### Conclusion
 Nmap successfully gathered useful information about the localhost target environment. The tool is important during the reconnaissance phase because it helps penetration testers understand the target system before conducting further security assessments.
+
+---
+## Tool 2 — Hping3
+
+Hping3 is a network packet analysis and packet crafting tool commonly used during penetration testing and reconnaissance activities. It helps penetration testers analyze network responses, test connectivity, and understand how the target machine responds to different packet requests.
+
+### Installing Hping3
+This step installs the Hping3 tool in Kali Linux before starting packet testing and network analysis activities.
+
+![Hping3 Installation](hping3-1Install.png)
+
+### Basic Packet Test
+This test is conducted to verify communication between the testing machine and the target system. It helps confirm that the target is reachable and responding to packet requests.
+
+```bash
+sudo hping3 localhost
+```
+
+![Hping3 Basic Test](hping3-2BasicTest.png)
+
+### SYN Packet Test
+This test is conducted to send SYN packets to port 80 on the target machine. The purpose of this test is to analyze how the target responds to connection requests and identify active services such as web servers.
+
+```bash
+sudo hping3 -S localhost -p 80
+```
+
+![Hping3 SYN Packet](hping3-3SYNPacket.png)
+
+### ICMP Packet Test
+This test is conducted to verify whether the target machine responds to ICMP requests. It helps test network connectivity and response behavior between systems.
+
+```bash
+sudo hping3 --icmp localhost
+```
+
+![Hping3 ICMP Test](hping3-4icmp.png)
+
+### Conclusion
+Hping3 successfully tested network communication and packet responses from the localhost target. The tool is useful during penetration testing because it helps analyze how the target system handles different network packet requests.
