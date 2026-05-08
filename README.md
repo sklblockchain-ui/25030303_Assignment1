@@ -433,7 +433,6 @@ First, DVWA database was created/reset to make sure the system is working proper
 
 ![Reset Database](dvwa-createresetdatabase.png)
 
-### Explanation
 This step is to prepare DVWA so everything is clean and ready. If database not ready, system cannot run properly.
 
 ## Step 2 — Login to DVWA
@@ -442,7 +441,6 @@ Login using default account.
 
 ![First Login](dvwa-firstlogin.png)
 
-### Explanation
 Login is needed to access all DVWA features. Without login, cannot test anything.
 
 ## Step 3 — DVWA Dashboard
@@ -451,7 +449,6 @@ After login, dashboard is displayed.
 
 ![Dashboard](dvwa-dashboardafterreset.png)
 
-### Explanation
 This shows DVWA is successfully running. All vulnerability modules are available on the left menu.
 
 ## Step 4 — Set Security Level to Low
@@ -460,7 +457,6 @@ Security level was changed to LOW.
 
 ![Set Low Security](dvwa-settolow.png)
 
-### Explanation
 Set to LOW so it is easier to test. If security is high, attack will not work. This is for learning purpose only.
 
 ## Step 5 — Access File Upload Module
@@ -469,7 +465,6 @@ File Upload module is used to test vulnerability.
 
 ![Change Security](dvwa-changesecurity.png)
 
-### Explanation
 This module allows user to upload file. If not secure, attacker can upload dangerous file like PHP.
 
 ## Step 6 — Upload test.php (Attack Simulation)
@@ -478,7 +473,6 @@ A PHP file (test.php) was uploaded into the system.
 
 ![Upload PHP](dvwa-uploastestphp.png)
 
-### Explanation
 This is the main attack step.
 
 Instead of normal image, a PHP file was uploaded. This shows the system does not properly check file type.
@@ -496,7 +490,6 @@ The uploaded file was opened using browser:
 
 http://localhost/DVWA/hackable/uploads/test.php
 
-### Explanation
 When the file is opened, the page is blank.
 
 This is normal because:
