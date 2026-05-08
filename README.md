@@ -200,6 +200,26 @@ workspaces create dvwa
 ### Conclusion
 Recon-ng successfully provided a structured framework for managing reconnaissance activities and organizing information gathering tasks. The framework is useful during penetration testing because it helps automate reconnaissance processes and improve workflow management.
 
+## Comparison of Reconnaissance Tools
+
+| Tool | What it do | Why we use |
+|---|---|---|
+| Nmap | Scan network | To see open port and what service running |
+| Hping3 | Send packet | To test how target respond to network |
+| DNSRecon | Check DNS | To get info about domain and DNS setup |
+| Recon-ng | Recon tool | To organize and automate info gathering |
+
+
+### Conclusion
+
+From this task, I learned that each tool has different function but all are used in reconnaissance phase.
+
+Nmap is useful to scan ports and services.  
+Hping3 is useful to test network response.  
+DNSRecon is useful to get DNS information.  
+Recon-ng helps to organize and manage reconnaissance work.
+
+All these tools help us understand the target system better before doing further penetration testing.
 
 ---
 # Task 2 — Maintaining Access
