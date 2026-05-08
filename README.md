@@ -8,10 +8,10 @@ This project is conducted strictly for educational purposes only in a controlled
 
 ## Setting up before starting lab
 1. ![Installing DVWA](installing-dwva.png)
-2. [Cloning DVWA](cloning-DVWA.png)
-3. [Config DVWA](config-DVWA.png)
-4. [Apache Status](apache-status.png)
-5. [Target IP](iptarget.png)
+2. ![Cloning DVWA](cloning-DVWA.png)
+3. ![Config DVWA](config-DVWA.png)
+4. ![Apache Status](apache-status.png)
+5. ![Target IP](iptarget.png)
 
 
 # TASK 1
