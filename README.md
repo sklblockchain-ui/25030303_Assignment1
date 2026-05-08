@@ -128,3 +128,34 @@ sudo hping3 --icmp localhost
 
 ### Conclusion
 Hping3 successfully tested network communication and packet responses from the localhost target. The tool is useful during penetration testing because it helps analyze how the target system handles different network packet requests.
+
+---
+## Tool 3 — DNSRecon
+
+DNSRecon is a DNS enumeration tool used during the reconnaissance phase in penetration testing. It helps gather DNS-related information from the target system such as domain records, nameserver information, and DNS configurations. This information helps penetration testers understand the target environment before conducting further security testing.
+
+### Installing DNSRecon
+This step installs the DNSRecon tool in Kali Linux before starting DNS enumeration and reconnaissance activities.
+
+![DNSRecon Installation](dnsrecon-1.png)
+
+### General DNS Enumeration
+This test is conducted to gather general DNS-related information from the target domain. The purpose of this test is to identify available DNS records and understand the DNS configuration used by the target environment.
+
+```bash
+dnsrecon -d localhost
+```
+
+![DNSRecon General Enumeration](dnsrecon-2basictest.png)
+
+### Standard DNS Enumeration
+This test is conducted to perform standard DNS enumeration against the target domain. The command helps identify DNS-related configurations and verify available DNS services used by the target machine.
+
+```bash
+dnsrecon -d localhost -t std
+```
+
+![DNSRecon Standard Enumeration](dnsrecon-3.png)
+
+### Conclusion
+DNSRecon successfully performed DNS reconnaissance activities against the localhost target. The tool is useful during penetration testing because it helps collect DNS information and improves understanding of the target environment before conducting further assessments.
