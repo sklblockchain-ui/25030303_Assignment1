@@ -7,7 +7,7 @@
 This project is conducted strictly for educational purposes only in a controlled lab environment using authorized targets.
 
 ## Setting up before starting lab
-1. Installing DVWA ![Installing DVWA](installing-dwva.png)
+1. Installing DVWA ![Installing DVWA](install-dwva.png)
 2. Cloning DVWA ![Cloning DVWA](cloning-DVWA.png)
 3. Configuration of DVWA ![Config DVWA](config-DVWA.png)
 4. Checking APACHE Status ![Apache Status](apache-status.png)
